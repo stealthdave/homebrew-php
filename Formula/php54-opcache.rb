@@ -8,8 +8,6 @@ class Php54Opcache < AbstractPhp54Extension
   depends_on 'pcre'
 
   def install
-    Dir.chdir "ZendOptimizerPlus-#{version}" unless build.head?
-
     ENV.universal_binary if build.universal?
 
     safe_phpize
