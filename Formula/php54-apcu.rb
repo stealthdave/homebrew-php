@@ -19,7 +19,7 @@ class Php54Apcu < AbstractPhp54Extension
                           "--enable-apc",
                           phpconfig
     system "make"
-    prefix.install %w(modules/apcu.so apcu.php)
+    prefix.install %w(modules/apcu.so)
     write_config_file unless build.include? "without-config-file"
   end
 
