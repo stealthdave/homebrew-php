@@ -8,6 +8,8 @@ class Php54Opcache < AbstractPhp54Extension
   depends_on 'pcre'
   depends_on 'autoconf'
 
+  def extension_type; "zend_extension"; end
+
   def install
     ENV.universal_binary if build.universal?
 
