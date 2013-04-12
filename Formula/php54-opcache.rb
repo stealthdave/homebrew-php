@@ -8,7 +8,7 @@ class Php54Opcache < AbstractPhp54Extension
   depends_on 'pcre'
 
   def install
-    Dir.chdir "apcu-#{version}" unless build.head?
+    Dir.chdir "ZendOptimizerPlus-#{version}" unless build.head?
 
     ENV.universal_binary if build.universal?
 
