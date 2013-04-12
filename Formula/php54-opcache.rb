@@ -6,6 +6,7 @@ class Php54Opcache < AbstractPhp54Extension
   sha1 '61fcbf613ec31deed1470d88107e8d462036a720'
 
   depends_on 'pcre'
+  depends_on 'autoconf'
 
   def install
     ENV.universal_binary if build.universal?
