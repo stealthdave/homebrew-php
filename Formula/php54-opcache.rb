@@ -5,7 +5,7 @@ class Php54Opcache < AbstractPhp54Extension
   url 'https://github.com/zend-dev/ZendOptimizerPlus/archive/v7.0.1.tar.gz'
   sha1 '61fcbf613ec31deed1470d88107e8d462036a720'
 
-  depends_on 'pecl'
+  depends_on 'pcre'
 
   def install
     Dir.chdir "apcu-#{version}" unless build.head?
