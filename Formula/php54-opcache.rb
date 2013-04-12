@@ -14,7 +14,7 @@ class Php54Opcache < AbstractPhp54Extension
     safe_phpize
     system "./configure", "--prefix=#{prefix}",
                           phpconfig
-    system "make"
+    system "make", "install"
     write_config_file unless build.include? "without-config-file"
   end
 
